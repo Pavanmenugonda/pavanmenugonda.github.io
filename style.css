@@ -1,68 +1,187 @@
 /* Reset some default styles */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2e6883;
+  color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+.navbar-lists {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-lists li {
+  margin-right: 20px;
+}
+
+
+
+.navbar-lists li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Add padding to body to offset navbar height */
+body {
+  padding-top: 40px; /* Adjust this value to match your navbar height */
+}
+
+.menu-toggle {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Dashboard styling */
+.dashboard {
+  background-color: #1e4a5f;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+padding: 20px;
+}
+
+.page-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding-left: 80px;
+  display: inline-block;
+}
+
+.page-title::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1e4a5f;
+  margin-right: 40px;
+}
+
+.portfolio-image-section img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.dashboard .social-icons {
+  display: flex;
+  justify-content:end;
+  flex:  100%;
+}
+
+.dashboard .social-icons a {
+  display: inline-block;
+  margin: 0 25px;
+}
+
+.dashboard .social-icons .icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.dashboard .social-icons .icon.facebook {
+  background-image: url(Images/facebook.png);
+}
+
+.dashboard .social-icons .icon.linkedin {
+  background-image: url(Images/linkedin.gif);
+}
+
+.dashboard .social-icons .icon.github {
+  background-image: url(Images/github.png);
+}
+
+.dashboard .social-icons .icon.gmail {
+  background-image: url(Images/gmail.png);
+}
+
+/* Section styling */
+.section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.section p {
+  margin-top: 10px;
+  color: #ac551b;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .title-section {
+    flex-wrap: nowrap;
   }
-  
-  /* Dashboard styling */
-  .dashboard {
-    background-color: #3a7a84;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+
+  .page-title {
+    flex: 1 100%;
+    margin-bottom: 10px;
   }
-  
-  .dashboard h1 {
-    margin: 0;
-    font-size: 28px;
-  }
-  
-  .dashboard .navigation {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
-  }
-  
-  .dashboard .navigation li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  .dashboard .navigation li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .dashboard .navigation li a:hover {
-    text-decoration: underline;
-  }
-  
+
   .dashboard .social-icons {
-    margin-top: 20px;
+    flex: 1 100%;
+    justify-content: center;
   }
-  
-  .dashboard .social-icons img {
-    width: 24px;
-    margin-right: 10px;
+
+  .dashboard .social-icons a {
+    margin: 0 5px;
   }
-  
-  /* Section styling */
+}
+
+@media screen and (max-width: 480px) {
   .section {
-    padding: 20px;
-    background-color: #f9f9f9;
-    margin-bottom: 20px;
+    padding: 10px;
   }
-  
+
   .section h2 {
-    margin: 0;
-    font-size: 24px;
-    color: #333;
+    font-size: 20px;
   }
-  
-  .section p {
-    margin-top: 10px;
-    color: #555;
-  }
-  
+}
