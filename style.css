@@ -1,0 +1,68 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Dashboard styling */
+  .dashboard {
+    background-color: #3abd3a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .dashboard h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  .dashboard .navigation {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .dashboard .navigation li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .dashboard .navigation li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .dashboard .navigation li a:hover {
+    text-decoration: underline;
+  }
+  
+  .dashboard .social-icons {
+    margin-top: 20px;
+  }
+  
+  .dashboard .social-icons img {
+    width: 24px;
+    margin-right: 10px;
+  }
+  
+  /* Section styling */
+  .section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+  }
+  
+  .section h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .section p {
+    margin-top: 10px;
+    color: #555;
+  }
+  
