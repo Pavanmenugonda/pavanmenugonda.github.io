@@ -13,7 +13,7 @@ body {
   width: 100%;
   background-color: #2e6883;
   color: #ffffff;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,7 +63,8 @@ body {
   background-color: #1e4a5f;
   color: #ffffff;
   padding: 20px;
-  margin-top: 60px; /* Adjust this value to match your navbar height */
+  /* margin-top: -10px;  */
+  /* Adjust this value to match your navbar height */
 }
 
 .title-section {
@@ -147,7 +148,7 @@ body {
   .title-section {
     flex-wrap: wrap;
   }
-
+ 
   .page-title {
     flex: 1 100%;
     margin-bottom: 10px;
@@ -168,7 +169,7 @@ body {
   .menu-toggle {
     display: block;
     position: relative;
-    width: 30px;
+    width: 20px;
     height: 25px;
     cursor: pointer;
   }
@@ -238,6 +239,10 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+
+  .navbar{
+  padding: 12px;
+  }
   .section {
     padding: 10px;
   }
@@ -249,5 +254,13 @@ body {
   .portfolio-image-section img {
     width: 120px;
     height: 120px;
+  }
+  .page-title .hi {
+    font-size: 15px;
+  }
+  .page-title .pavan {
+    font-size: 20px;
+  }
+  
   }
 }
