@@ -140,7 +140,10 @@ body {
 
 .section p {
   margin-top: 10px;
-  color: #ac551b;
+  color: #0c0b0a;
+}
+.section{
+  text-align: center;
 }
 
 /* Responsive Styles */
@@ -236,6 +239,9 @@ body {
   .navbar {
     padding-top: 60px; /* Adjust this value to match your navbar height */
   }
+  .section{
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -252,11 +258,13 @@ body {
   }
 
   .portfolio-image-section img {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
   }
   .page-title .hi {
     font-size: 15px;
+    color: #d25908;
+    font-style: italic;
   }
   .page-title .pavan {
     font-size: 20px;
