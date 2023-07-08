@@ -145,6 +145,7 @@ body {
 .section{
   text-align: center;
 }
+/*Skills section*/
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
@@ -188,6 +189,7 @@ body {
     background-color: #ffffff;
     transition: background-color 0.3s ease;
   }
+
 
   .menu-toggle .hamburger:before,
   .menu-toggle .hamburger:after {
