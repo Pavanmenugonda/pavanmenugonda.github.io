@@ -73,7 +73,7 @@ body {
   padding: 20px;
 }
 .page-title .hi {
-  font-size: 20px;
+  font-size: 25px;
   color: #cab87c;
   font-style: italic;
 }
@@ -84,6 +84,7 @@ body {
   font-size: 30px;
   margin-bottom: 30px;
   text-align: center;
+  margin-left: 200px;
 }
 
 .page-title::before {
@@ -270,7 +271,10 @@ body {
     width: 140px;
     height: 140px;
   }
- 
+ .page-title{
+  text-align: center;
+  margin-left: -10px;
+ }
   .page-title .pavan {
     font-size: 20px;
   }
