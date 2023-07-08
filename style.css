@@ -72,7 +72,14 @@ body {
   align-items: center;
   padding: 20px;
 }
-
+.page-title .hi {
+  font-size: 20px;
+  color: #cab87c;
+  font-style: italic;
+}
+.menugonda{
+  color:#e9640b
+}
 .page-title {
   font-size: 30px;
   margin-bottom: 30px;
@@ -263,14 +270,28 @@ body {
     width: 140px;
     height: 140px;
   }
-  .page-title .hi {
-    font-size: 15px;
-    color: #d25908;
-    font-style: italic;
-  }
+ 
   .page-title .pavan {
     font-size: 20px;
   }
   
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  .hi {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(40, end);
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+  
+  @media (max-width: 768px) {
+    .hi {
+      font-size: 10px; /* Adjust the font size for mobile devices */
+    }
+  }
   
 }
