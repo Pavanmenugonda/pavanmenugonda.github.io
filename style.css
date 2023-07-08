@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background-color: rgb(177, 173, 201);
 }
 
 /* Navbar styling */
@@ -44,9 +45,13 @@ body {
 }
 
 .navbar-lists li {
-  margin-right: 20px;
+  margin-right: 35px;
 }
-
+.navbar-lists.active li :hover{
+  text-decoration: underline;
+  color: #1c243b;
+  text-transform:uppercase;
+}
 .navbar-lists li a {
   color: #ffffff;
   text-decoration: none;
@@ -66,7 +71,11 @@ body {
   /* margin-top: -10px;  */
   /* Adjust this value to match your navbar height */
 }
-
+.main-section{
+ width:1100px;
+ margin-left: 100px;
+ margin-top: 8px;
+}
 .title-section {
   display: flex;
   align-items: center;
@@ -142,10 +151,14 @@ body {
 /* Section styling */
 .section {
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #fbffff;
   margin-bottom: 20px;
+ 
 }
-
+.section h2{
+background-color: #e0e0e0;
+color: #386275;
+}
 .section p {
   margin-top: 10px;
   color: #0c0b0a;
@@ -233,13 +246,19 @@ body {
     display: none;
   }
   .navbar-lists.active {
-    display: block;
-    position: absolute;
+    display:block;
+    position:absolute;
+    text-align: center;
     top: 100%;
     left: 0;
     background-color: #2e6883;
     width: 100%;
     padding: 10px 0;
+  }
+  .navbar-lists.active li :hover{
+    text-decoration: underline;
+    color: #1c243b;
+    text-transform:uppercase;
   }
   
   .navbar-lists.active li {
@@ -256,6 +275,10 @@ body {
 
 @media screen and (max-width: 480px) {
 
+  .main-section{
+    width:320px;
+    margin-left: 55px;
+   }
   .navbar{
   padding: 12px;
   }
