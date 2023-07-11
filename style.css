@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: rgb(147, 160, 137);
+  background-color: rgb(190, 189, 170);
 }
 
 /* Navbar styling */
@@ -277,7 +277,7 @@ color: #386275;
 
   .main-section{
     width:320px;
-    margin-left: 50px;
+    margin-left: 40px;
    }
   .navbar{
   padding: 12px;
