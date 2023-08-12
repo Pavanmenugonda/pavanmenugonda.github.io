@@ -1,171 +1,293 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
+  <title>Pavan Kumar Menugonda</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>
+
 </head>
 <body>
-  <nav class="navbar">
-    <div class="menu-toggle">
-      <div class="hamburger"></div>
-       <!-- <i class="fa fa-bars"></i>  -->
-    </div>
-    <ul class="navbar-lists">
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#interests">Interests</a></li>
-    </ul>
-  </nav>
-
-  <div class="main-content">
-    <div class="dashboard">
-      <div class="title-section">
-        <div class="portfolio-image-section">
-          <img src="Images/myPhoto.jpg" alt="Portfolio Image">
+  <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+    <div class="container">
+        <a class="navbar-brand" href="#">Pavan Kumar Menugonda</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Skills
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            
         </div>
-        <h1 class="page-title">
-          <div>
-          <span id="typing-text" class="hi"></span> 
-          </div>
-          <span class="pavan">I'm Pavan Kumar   </span> 
-          <span class="menugonda"> Menugonda</span>
-        </h1>
-        
-      </div>
-      <div class="social-icons">
-        <!-- <a href="https://www.facebook.com/pavan.menugonda/"><span class="icon facebook"></span></a> -->
-        <a href="https://www.linkedin.com/in/pavan-kumar-menugonda-aa3a88219"><span class="icon linkedin"></span></a>
-        <a href="https://github.com/Pavanmenugonda"><span class="icon github"></span></a>
-        <a href="mailto:pavanmenugonda9@gmail.com"><span class="icon gmail"></span></a>
-      </div>
     </div>
-  
-    <div class="main-section">
-      <div id="about" class="section">
-        <h2>About Me</h2>
-        <p> I'm a master's student with a passion for the IT industry. I have gained valuable experience through my academic projects and I am now eagerly looking to apply my skills and knowledge in the IT field.
-          <br>
-  
-          <br>
-          Throughout my studies, I have developed a strong foundation in various IT concepts and technologies. I have had the opportunity to work on diverse projects, which have enhanced my problem-solving abilities and equipped me with practical skills in areas such as programming, database and software development.
-          <br>
-        <br>
-        I am thrilled to share my portfolio with you, showcasing some of my best work and accomplishments. Please feel free to explore and get in touch if you have any questions or opportunities for collaboration. I look forward to connecting with you!
-        </p>
+</nav>
+
+<section class="bgimage" id="home">
+  <div class="container-fluid">
+      <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+          <h2 class="hero_title">Hi, it's me Pavan </h2>
+          <p class="hero_desc">I am student of Master of IT (Software Engineer) @ Charles Darwin University</p>
       </div>
-      <div id="education" class="section">
-        <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Charles Darwin University</h3>
-                            <div class="subheading mb-3">Master of Information Technology - Software Engineering</div>
-                            <br>
-                            <div>Casuarina, Darwin, NT</div>
-                            <br>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">February 2022 - November 2023</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">SRI Indu College of Engineering and Technology</h3>
-                            <div class="subheading mb-3">Electronics and Communication Engineering</div>
-                            <p>Hyderabad, Telangana, INDIA</p>
-                        </div>
-                    </div>
       </div>
-
-      <div id="experience" class="section">
-        <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">AWEsome Placement - Provided by CDU Career Centre</h3>
-                            <div class="subheading mb-3">Australian Work Culture Experience</div>
-                        <p> During my training, I gained hands-on experience with the ITMS team, starting from IT support and progressing to network engineering and cybersecurity, where I worked on system installations, data center setups, and handling phishing attacks using various analysis tools.
-                          These experiences enhanced my skills and provided me with a well-rounded understanding of IT operations and security.
-                           </p>
-                          </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Total 50 hours of training</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Volunteer</h3>
-                            <div class="subheading mb-3">1. World Community Development Conference - 2023 </div>
-                            <p>Help the guests to the conference halls and provide them with assistance throughout their event and
-                              One of the most remarkable aspects of this conference was the opportunity to meet and interact with individuals from all corners of the world community.
-                              Engaging in conversations with passionate professionals, practitioners, and scholars was truly awe-inspiring!</p>
-                          </div>
-                        <div class="flex-shrink-0"><span class="text-primary"> 19 June 2023 - 22 June 2023</span></div>
-                    </div>
-      </div>
-
-      <div id="skills" class="section">
-        <h2>Skills</h2>
-        <h3>  &nbsp;&nbsp;&nbsp;&nbsp; Programing Skills</h3>
-        <ul class="program">
-          <i class="fab fa-html5 fa-lg"></i>&nbsp;&nbsp;&nbsp;
-          <i class="fab fa-css3 fa-lg"></i>&nbsp;&nbsp;&nbsp;
-          <i class="fab fa-js fa-lg"></i>
-          <br><br>
-          <i class="fab fa-cuttlefish">#</i>
-          <br><br>
-          <i class="fab fa-unity fa-lg"></i>
-          <br>
-          <br>
-         
-          <image src="Images/uojq4rrs.bmp" alt=".net framwork"  width="50" height="50" >
-
-
-        </ul>
-        
-      </div>
-
-      <div id="projects" class="section">
-        <h2>Projects</h2>
-        <h3>1. Thesis Project - Unity Game</h3>
-        <p>In my thesis project, I developed a Unity game focused on creating an immersive and interactive storytelling experience. The primary goal was to design an interface that captivates users and allows them to engage with the narrative in a unique way.<br>
-          I created an environment where players can explore a rich storyline, make choices that influence the plot, and experience dynamic storytelling elements. The interface seamlessly integrates various interactive elements such as dialogue systems, character interactions, and environmental cues to enhance the overall narrative experience.
-        <br>
-        By playing this game, players not only engage with an immersive interface but also gain a deep understanding of the story. 
-        </p>
-        <h4 >Youtube Video - Coming Soon </h4>
-       
-        <h3>Download Game</h3>
-        <h4>Files-Coming Soon</h4>
-        <h3>2. Data Migration</h3>
-        <p>During my third semester, I collaborated with the City of Darwin team to successfully migrate data from the yourDarwin (MyGov) website to the Cityofdarwin website. In addition, I was responsible for providing the project workflow, ensuring smooth coordination and efficient completion of tasks.</p>
-        <h4>Tools Used for Project</h4>
-        <p>
-          Drupal9 - for content Management system<br>
-          PowerBi - Data visualization and Data Manipulation. 
-        </p>
-      </div>
-
-      <div id="certifications" class="section">
-        <h2>Certifications</h2>
-        <h4>Responsive Web Design - Free code Camp</h4>
-        <h4>C# - CodewithMosh</h4>
-        <h4>SQl - CodewithMosh</h4>
-        <h4>.NET/Microsoft</h4>
-
-
-      </div>
-
-      <div id="interests" class="section">
-        <h2 class="mb-5">Interests</h2>
-                <p>
-                  Apart from being a web developer, I thoroughly enjoy spending my time outdoors, particularly playing club cricket as it is one of my favorite hobbies. When circumstances keep me indoors, I indulge in my passion for sci-fi and fantasy genre movies and television shows. 
-                    <br>
-                  Additionally, I am an aspiring chef, and I often devote a significant portion of my free time to experimenting with new recipes. Furthermore, I keep myself up-to-date with the latest technology advancements within the community, continuously exploring and learning about the ever-evolving world of technology.
-                </p>
-      </div>
-    </div>
   </div>
+</section>
+
+<!-- about section-->
+<section id="about">
+  <div class="container mt-4 pt-4">
+      <h1 class="text-center">About Me</h1>
+      <div class="row mt-4">
+          <div class="col-lg-4">
+              <img src="Images/s354190(1).jpg" class= "imageAboutPage" alt="">
+          </div>
+
+          <div class="col-lg-8">
+              <p> 
+                I'm a master's student with a passion for the IT industry. I have gained valuable experience through my academic projects and I am now eagerly looking to apply my skills and knowledge in the IT field.
+Throughout my studies, I have developed a strong foundation in various IT concepts and technologies. I have had the opportunity to work on diverse projects, which have enhanced my problem-solving abilities and equipped me with practical skills in areas such as programming, database and software development. 
+              </p>
+              <div class="col-md-6">
+                <ul>
+                    <li>Full Name: Pavan Kumar Menugonda</li>
+                    <li>Looking for Software Engineering Roles</li>
+
+                </ul>
+            </div>
+          </div>
+      </div>
+</section>
+
+<!-- services section-->
+<section id="services">
+  <div class="container">
+      <h1 class="text-center">Skills</h1>
+      <div class="row">
+          <div class="col-lg-4 mt-4">
+              <div class="card servicesText">
+                  <div class="card-body">
+                      <i class="fas fa-desktop servicesIcon"></i>
+                      <h4 class="card-title mt-3"> Website Design & Website Development</h4>
+                      <p class="card-text mt-3"> <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                      </p>
+                  </div>
+              </div>  
+          </div>
+          <div class="col-lg-4 mt-4">
+              <div class="card servicesText">
+                  <div class="card-body">
+                      <i class='far servicesIcon fa-check-circle'></i>
+                      <h4 class="card-title mt-3"> Front-End Development (.NET):</h4>
+                      <p class="card-text mt-3"> <ul>
+                        <li>Angular</li>
+                        <li>ASP.NET MVC</li>
+                        <li>Blazor</li>
+                        <li>Web API</li>
+                        <li>RESTful Services</li>
+                    </ul>
+                      </p>
+                  </div>
+              </div>  
+          </div>
+
+          <div class="col-lg-4 mt-4">
+              <div class="card servicesText">
+                  <div class="card-body">
+                      <i class='fas servicesIcon fa-layer-group'></i>
+                      <h4 class="card-title mt-3">Back-End Development and Databases:</h4>
+                      <p class="card-text mt-3">
+                            <ul>
+                            <li>SQL</li>
+                              <li>Node.js</li>
+                             <li>Microsoft SQL Server Management Studio (SSMS)</li>
+                             <li>Express.js</li>
+                             <!--<li>RESTful API Development</li>-->
+                            </ul>
+                      </p>
+                  </div>
+              </div>  
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-lg-4 mt-4">
+              <div class="card servicesText">
+                  <div class="card-body">
+                    <i class="unity-icon"></i>
+                      <h4 class="card-title mt-3">UNITY 3D</h4>
+                      <p class="card-text mt-3"> <ul>
+                        <li>Unity3D</li>
+                        <li>Blender (for 3D modeling)</li>
+                        <li>Animation Principles</li>
+                        <li>Playmaker (Visual Scripting)</li>
+                        <li>Dialogue Systems</li>
+                        </ul>
+                      </p>
+                  </div>
+              </div>  
+          </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas fa-cogs servicesIcon'></i>
+                        <h4 class="card-title mt-3">Version Control and Collaboration</h4>
+                        <p class="card-text mt-3"> <ul>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Github Desktop</li>
+                            <li>Collaboration Tools - Teams, Jira.</li>
+                          </ul>
+                        </p>
+                    </div>
+                </div>  
+           
+            
+      </div>
+  </div>
+
+  <section id="portfolio">
+    <div class="container mt-3">
+        <h1 class="text-center">Portfolio</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card">
+                    <img class="card-img-top" src="Images/portfolioScreenshot.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">My Portfolio Website</h4>
+                        <p class="card-text">This is my personal portfolio website showcasing my skills and projects.
+                             Created using Html, Css, Js, Formspree, embed-map.
+                        </p>
+                        <div class="text-center">
+                            <a href="https://pavanmenugonda.com/" target="_blank" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/unityGame.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Unity Game</h4>
+                        <p class="card-text"> Unity game focused on creating an immersive and interactive storytelling experience. The primary goal was to design
+                             an interface that captivates users and allows them to engage with the narrative in a unique wa</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/dotnetApp.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">.NET Application</h4>
+                        <p class="card-text">Developing .NET application in progress </p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/inProgress.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Game- 2</h4>
+                        <p class="card-text">Stay tuned! I'm currently working on an exciting new project.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- contact section-->
+
+<section id="contact">
+  <div class="container mt-3 contactContent">
+      <h1 class="text-center">Contact Me</h1>
+
+      <div class="row mt-4">
+          <div class="col-lg-6">
+              <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                  <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                      <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Bellamack+NT,+Australia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                      </iframe>
+                  </div>
+                  <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                  <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                  </style>
+              </div>
+          </div>
+
+          <div class="col-lg-6">
+            <!-- Form fields -->
+            <form method="POST" action="https://formspree.io/f/xvojkqvp">
+                <input type="text" class="form-control form-control-lg" placeholder="Name" name="name">
+                <input type="email" class="form-control mt-3" placeholder="Email" name="email">
+                <input type="text" class="form-control mt-3" placeholder="Subject" name="subject">
+                <div class="mb-3 mt-3">
+                    <textarea class="form-control" rows="5" id="comment" name="message" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success mt-3">Contact Me</button>
+            </form>
+        </div>
+        
+
+      </div>
+  </div>
+</section>
+<footer id="footer">
+  <div class="container-fluid">
+      <!-- social media icons -->
+      <div class="social-icons mt-4">
+          <a href="https://www.facebook.com/pavan.menugonda/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/pavan-kumar-menugonda-aa3a88219" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Pavanmenugonda" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.youtube.com/channel/UCg4clJs941L-ql8jiJEVKxw" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+  </div>
+</footer>
+</section>
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
 </body>
 </html>
