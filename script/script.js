@@ -9,16 +9,29 @@ window.onscroll = function() {
     else {
         header.classList.remove('navbarDark');
     }
-
+    //  Image sliders
     const slider = document.querySelector('.slider');
     const slides = document.querySelectorAll('.slide');
     let slideIndex = 0;
 
-    function changeSlide() {
-        slideIndex = (slideIndex + 1) % slides.length;
+    function changeSlide(direction) {
+        if (direction === 'next') {
+            slideIndex = (slideIndex + 1) % slides.length;
+        } else if (direction === 'prev') {
+            slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+        }
         slider.style.transform = `translateX(-${slideIndex * 100}%)`;
     }
 
-    // Automatically change slide every 3 seconds (adjust the time as needed)
-    setInterval(changeSlide, 3000);
+    // Add click event listeners for the arrow buttons
+    const leftArrow = document.querySelector('.left-arrow');
+    const rightArrow = document.querySelector('.right-arrow');
+
+    leftArrow.addEventListener('click', () => {
+        changeSlide('prev');
+    });
+
+    rightArrow.addEventListener('click', () => {
+        changeSlide('next');
+    });
 }
