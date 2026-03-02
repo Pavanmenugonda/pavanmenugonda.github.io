@@ -16,8 +16,16 @@
     font-size: 4.5rem;
 }
 .hero_desc {
-    font-size: 2rem;
-}
+    color: #D8BFD8; /* light purple / thistle for contrast */
+    font-size: 14px; /* smaller, readable text */
+    line-height: 1.6; /* spacing for readability */
+    max-width: 600px; /* optional, keeps lines from stretching too far */
+    margin: 20px auto; /* center block if needed */
+    font-family: Arial, sans-serif; /* clean font */
+  }
+  body {
+    background-color: #000000; /* black background */
+  }
 .hero-text {
     text-align: center;
     position: absolute;
